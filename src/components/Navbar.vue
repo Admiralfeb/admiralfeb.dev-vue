@@ -9,7 +9,7 @@
     <router-link class="nav-link" mat-button to="/resume"
       ><span class="mat-button-wrapper">Resume</span></router-link
     >
-    <router-link class="nav-link" mat-button to="/code"
+    <router-link class="nav-link" mat-button to="/projects"
       ><span class="mat-button-wrapper">Projects</span></router-link
     >
   </nav>

@@ -17,7 +17,7 @@
           </p>
           <p>
             For my other projects click
-            <router-link to="/code">here</router-link>.
+            <router-link to="/projects">here</router-link>.
           </p>
           <p>
             Finally, to contact me, email me at
