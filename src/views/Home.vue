@@ -6,11 +6,26 @@
       <h2 class="text-center">I'm Zachary and this is my portfolio.</h2>
       <div class="container">
         <img width="300" src="@/assets/img/zachary.jpg" />
-        <p>
-          Ideally, switching between the different versions of this site will
-          keep everything the same except the code system, however, the stylings
-          are not the same between the systems, so there are slight differences.
-        </p>
+        <div>
+          <p>
+            This webpage is coded in multiple languages and frameworks. To see
+            other versions, see the links to the left.
+          </p>
+          <p>
+            For my resume/ccv click
+            <router-link to="/resume">here</router-link>.
+          </p>
+          <p>
+            For my other projects click
+            <router-link to="/code">here</router-link>.
+          </p>
+          <p>
+            Finally, to contact me, email me at
+            <a href="mailto:Zachary@admiralfeb.net" target="_blank">
+              Zachary@admiralfeb.net</a
+            >.
+          </p>
+        </div>
       </div>
     </div>
   </div>

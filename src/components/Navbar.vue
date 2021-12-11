@@ -1,13 +1,16 @@
 <template>
   <nav class="navbar">
     <router-link id="homeImage" to="/">
-      <img id="z-img" src="@/assets/img/Z-img.png" alt="logo" />
+      <img src="@/assets/img/Z-img.png" alt="logo" width="55" />
     </router-link>
-    <router-link class="nav-link" mat-icon-button id="btnHome" to="/"
+    <router-link class="nav-link" mat-icon-button to="/"
       ><span class="material-icons"> home </span></router-link
     >
-    <router-link class="nav-link" mat-button id="btnCode" to="/code"
-      ><span class="mat-button-wrapper"> Code</span></router-link
+    <router-link class="nav-link" mat-button to="/resume"
+      ><span class="mat-button-wrapper">Resume</span></router-link
+    >
+    <router-link class="nav-link" mat-button to="/code"
+      ><span class="mat-button-wrapper">Projects</span></router-link
     >
   </nav>
 </template>
@@ -31,6 +34,7 @@
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 0.5em;
+  text-align: center;
 }
 .nav-link.router-link-active {
   background-color: var(--primary);
@@ -48,10 +52,5 @@
   display: block;
   margin-right: 1em;
   width: 52px;
-}
-
-#z-img {
-  height: auto;
-  width: 55px;
 }
 </style>

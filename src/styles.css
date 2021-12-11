@@ -10,7 +10,8 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--bg-color);
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Roboto, Helvetica, sans-serif;
   color: white;
 }
 
@@ -25,20 +26,23 @@ a:hover {
 
 [mat-button] {
   box-sizing: border-box;
-  display: inline-block;
+  position: relative;
+  user-select: none;
   cursor: pointer;
   outline: none;
   border: none;
-  overflow: visible;
-  line-height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   white-space: nowrap;
+  margin: 0;
   min-width: 64px;
+  line-height: 36px;
   padding: 0 16px;
   border-radius: 4px;
+  overflow: visible;
   text-align: center;
-}
-[mat-button] > .mat-button-wrapper {
-  margin: 0 auto;
+  font-weight: 500;
 }
 [mat-icon-button] {
   padding: 0;
@@ -46,7 +50,7 @@ a:hover {
   width: 40px;
   height: 40px;
   flex-shrink: 0;
-  line-height: 40px;
+  line-height: 36px;
   border-radius: 50%;
   text-align: center;
 }
