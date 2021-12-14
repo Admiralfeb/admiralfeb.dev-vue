@@ -1,7 +1,7 @@
 <template>
   <h1 class="text-center">Welcome to Admiralfeb.net - Vue</h1>
   <div class="container">
-    <Versions />
+    <Versions :pages="pages" />
     <div class="jumbotron">
       <h2 class="text-center">I'm Zachary and this is my portfolio.</h2>
       <div class="container">
@@ -34,10 +34,14 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Versions from "@/components/Versions.vue";
+import { WEBSITE_URLS } from "@/constants";
 
 export default defineComponent({
   components: {
     Versions,
+  },
+  setup() {
+    return { pages: WEBSITE_URLS };
   },
 });
 </script>

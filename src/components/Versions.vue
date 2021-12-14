@@ -10,7 +10,7 @@
     <p>
       Ideally, switching between the different versions of this site will keep
       everything the same except the code system, however, the stylings are not
-      the same between the systems, so there are slight differences.
+      the same between the systems, so there will be slight differences.
     </p>
   </div>
 </template>
@@ -19,10 +19,11 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  data() {
-    return {
-      pages: [{ lang: "Angular", url: "https://ng.admiralfeb.net" }],
-    };
+  props: {
+    pages: {
+      type: String,
+      required: true,
+    },
   },
 });
 </script>
