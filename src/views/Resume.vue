@@ -14,19 +14,20 @@
 import Loader from "@/components/Loader.vue";
 import ResumeData from "@/components/ResumeData.vue";
 import { computed, defineComponent } from "vue";
+import { useStore } from "vuex";
 
 export default defineComponent({
   components: {
     Loader,
     ResumeData,
   },
-  computed: {
-    resume() {
-      return this.$store.state.resume;
-    },
-  },
-  created() {
-    this.$store.dispatch("getResume");
+  setup() {
+    const store = useStore();
+    store.dispatch("getResume");
+
+    return {
+      resume: computed(() => store.state.resume),
+    };
   },
 });
 </script>
