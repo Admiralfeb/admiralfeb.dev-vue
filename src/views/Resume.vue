@@ -11,9 +11,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/runtime-core";
 import Loader from "@/components/Loader.vue";
 import ResumeData from "@/components/ResumeData.vue";
+import { computed, defineComponent } from "vue";
 
 export default defineComponent({
   components: {
