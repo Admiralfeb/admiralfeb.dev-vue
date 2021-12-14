@@ -3,7 +3,7 @@
     <h3 class="title">{{ project.name }}</h3>
     <div class="fill" />
     <a mat-button :href="project.url">Project URL</a>
-    <a mat-button :href="project.girUrl">Git URL</a>
+    <a mat-button :href="project.gitUrl">Git URL</a>
   </div>
   <p>{{ project.description }}</p>
   <h4>Technologies Used:</h4>
