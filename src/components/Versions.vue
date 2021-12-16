@@ -1,5 +1,5 @@
 <template>
-  <div class="jumbotron">
+  <div class="raised md:grow-0 md:max-w-md md:min-h-max">
     <p>This page is coded in Vue v3.0.0</p>
     <p>For other versions of Admiralfeb.net, see the following links:</p>
     <ul>
@@ -27,9 +27,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-.jumbotron {
-  max-width: 500px;
-}
-</style>

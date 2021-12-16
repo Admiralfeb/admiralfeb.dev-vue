@@ -60,17 +60,17 @@ a:hover {
   text-align: center;
 }
 
-.jumbotron {
+.raised {
   background-color: var(--bg-color-raised);
   box-sizing: border-box;
-  margin: 10px auto;
+  /* margin: 10px auto; */
   padding: 5px 10px;
   border-radius: 4px;
 }
-.text-center {
-  text-align: center;
-}
 .fill {
+  flex-grow: 1;
+}
+.grow {
   flex-grow: 1;
 }
 

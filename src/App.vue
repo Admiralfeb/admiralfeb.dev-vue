@@ -13,6 +13,3 @@ export default {
   },
 };
 </script>
-
-<!-- Split out to allow theme. The file will potentially be many lines of code. -->
-<style src="./styles.css" lang="css"></style>

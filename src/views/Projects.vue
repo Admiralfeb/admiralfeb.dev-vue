@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h2 class="text-center">Zachary's Projects</h2>
-    <div class="jumbotron">
+    <div class="raised">
       <div class="projects" v-if="projects?.length > 0">
         <Project
           v-for="project in projects"
@@ -40,7 +40,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.jumbotron {
+.raised {
   padding: 5px 10px 10px 10px;
   width: 640px;
 }

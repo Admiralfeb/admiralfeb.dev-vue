@@ -1,11 +1,10 @@
 <template>
   <h1 class="text-center">Welcome to Admiralfeb.net - Vue</h1>
-  <div class="container">
-    <Versions :pages="pages" />
-    <div class="jumbotron">
+  <div class="flex flex-col md:flex-row">
+    <div class="raised my-10 mx-5 grow">
       <h2 class="text-center">I'm Zachary and this is my portfolio.</h2>
-      <div class="container">
-        <img width="300" src="@/assets/img/zachary.jpg" />
+      <div>
+        <img class="mr-10" width="300" src="@/assets/img/zachary.jpg" />
         <div>
           <p>
             This webpage is coded in multiple languages and frameworks. To see
@@ -28,6 +27,7 @@
         </div>
       </div>
     </div>
+    <Versions :pages="pages" />
   </div>
 </template>
 
@@ -47,16 +47,7 @@ export default defineComponent({
 </script>
 
 <style lang="css" scoped>
-.container {
-  display: flex;
-  flex-direction: row;
-}
-.jumbotron {
-  flex-grow: 1;
-  margin: 0 10px;
-}
 img {
   border-radius: 50%;
-  margin-right: 10px;
 }
 </style>
