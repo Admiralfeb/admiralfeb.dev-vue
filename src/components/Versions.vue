@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron">
     <p>This page is coded in Vue v3.0.0</p>
-    <p>For other versions of Admiralfeb.net, see the following links:</p>
+    <p>For other versions of admiralfeb.dev, see the following links:</p>
     <ul>
       <li v-for="page in pages" :key="page.lang">
         <a :href="page.url">{{ page.lang }}</a>

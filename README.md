@@ -1,4 +1,4 @@
-# vue.admiralfeb.net
+# vue.admiralfeb.dev
 
 ## Project setup
 ```

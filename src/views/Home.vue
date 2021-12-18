@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-center">Welcome to Admiralfeb.net - Vue</h1>
+  <h1 class="text-center">Welcome to admiralfeb.dev - Vue</h1>
   <div class="container">
     <Versions :pages="pages" />
     <div class="jumbotron">
@@ -21,8 +21,8 @@
           </p>
           <p>
             Finally, to contact me, email me at
-            <a href="mailto:Zachary@admiralfeb.net" target="_blank">
-              Zachary@admiralfeb.net</a
+            <a href="mailto:Zachary@admiralfeb.dev" target="_blank">
+              Zachary@admiralfeb.dev</a
             >.
           </p>
         </div>
