@@ -1,9 +1,8 @@
-import { API_URL } from "@/constants";
 import { IResume } from "@/models/resume";
-import axios from "axios";
+import { apiClient } from "@/services/server";
 
 export const fetchResume = async (): Promise<IResume | undefined> => {
-  const response = await axios.get<IResume>(`${API_URL}/resume`);
+  const response = await apiClient.get<IResume>(`/resume`);
   if (response.data) {
     const resume = response.data;
     const experience = resume.experience;

@@ -1,10 +1,9 @@
-import { API_URL } from "@/constants";
 import { IProject } from "@/models/project";
-import axios from "axios";
+import { apiClient } from "@/services/server";
 import { genericSortArray } from "./sort";
 
 export const fetchProjects = async (): Promise<IProject[]> => {
-  const response = await axios.get<IProject[]>(`${API_URL}/projects`);
+  const response = await apiClient.get<IProject[]>(`/projects`);
   const sortedData = genericSortArray(response.data ?? [], {
     order: "asc",
     orderBy: "name",
