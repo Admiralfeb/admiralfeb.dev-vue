@@ -1,6 +1,8 @@
+import Home from "@/views/Home.vue";
+import NotFound from "@/views/NotFound.vue";
+import Projects from "@/views/Projects.vue";
+import Resume from "@/views/Resume.vue";
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
-import Projects from "../views/Projects.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -10,17 +12,18 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/projects",
-    name: "projects",
+    name: "Projects",
     component: Projects,
   },
   {
     path: "/resume",
     name: "Resume",
-    // route level code-splitting
-    // this generates a separate chunk (about.[resume].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "resume" */ "../views/Resume.vue"),
+    component: Resume,
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "NotFound",
+    component: NotFound,
   },
 ];
 

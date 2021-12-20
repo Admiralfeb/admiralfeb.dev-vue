@@ -13,11 +13,11 @@
           </p>
           <p>
             For my resume/ccv click
-            <router-link to="/resume">here</router-link>.
+            <router-link :to="{ name: 'Resume' }">here</router-link>.
           </p>
           <p>
             For my other projects click
-            <router-link to="/projects">here</router-link>.
+            <router-link :to="{ name: 'Projects' }">here</router-link>.
           </p>
           <p>
             Finally, to contact me, email me at

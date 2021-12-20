@@ -1,15 +1,15 @@
 <template>
   <nav class="navbar">
-    <router-link id="homeImage" to="/">
+    <router-link id="homeImage" :to="{ name: 'Home' }">
       <img src="@/assets/img/Z-img.png" alt="logo" width="55" />
     </router-link>
-    <router-link class="nav-link" mat-icon-button to="/"
+    <router-link class="nav-link" mat-icon-button :to="{ name: 'Home' }"
       ><span class="material-icons"> home </span></router-link
     >
-    <router-link class="nav-link" mat-button to="/resume"
+    <router-link class="nav-link" mat-button :to="{ name: 'Resume' }"
       ><span class="mat-button-wrapper">Resume</span></router-link
     >
-    <router-link class="nav-link" mat-button to="/projects"
+    <router-link class="nav-link" mat-button :to="{ name: 'Projects' }"
       ><span class="mat-button-wrapper">Projects</span></router-link
     >
   </nav>
