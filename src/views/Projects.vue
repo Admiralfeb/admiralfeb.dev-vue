@@ -42,6 +42,12 @@ export default defineComponent({
 <style scoped>
 .jumbotron {
   padding: 5px 10px 10px 10px;
-  width: 640px;
+  /* width: 640px; */
+}
+
+@media screen and (min-width: 640px) {
+  .jumbotron {
+    width: 640px;
+  }
 }
 </style>

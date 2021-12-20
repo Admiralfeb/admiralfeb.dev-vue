@@ -7,10 +7,10 @@
       <div class="container">
         <img width="300" src="@/assets/img/zachary.jpg" />
         <div>
-          <p>
+          <!-- <p>
             This webpage is coded in multiple languages and frameworks. To see
             other versions, see the links to the left.
-          </p>
+          </p> -->
           <p>
             For my resume/ccv click
             <router-link :to="{ name: 'Resume' }">here</router-link>.
@@ -50,6 +50,8 @@ export default defineComponent({
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  word-wrap: normal;
 }
 .jumbotron {
   flex-grow: 1;
@@ -57,6 +59,12 @@ export default defineComponent({
 }
 img {
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+  img {
+    margin: 0 10px 0 0;
+  }
 }
 </style>

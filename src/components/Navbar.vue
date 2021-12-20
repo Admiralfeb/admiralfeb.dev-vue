@@ -45,6 +45,9 @@
   color: black;
   cursor: pointer;
 }
+.nav-link[mat-button] {
+  padding: 0 16px;
+}
 
 #homeImage {
   padding: 0;

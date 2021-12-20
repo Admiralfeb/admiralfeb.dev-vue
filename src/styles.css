@@ -39,13 +39,13 @@ a:hover {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   margin: 0;
-  min-width: 64px;
+  min-width: 70px;
   line-height: 36px;
-  padding: 0 16px;
   border-radius: 4px;
   overflow: visible;
+  word-wrap: normal;
   text-align: center;
   font-weight: 500;
 }
@@ -58,6 +58,13 @@ a:hover {
   line-height: 36px;
   border-radius: 50%;
   text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  [mat-button] {
+    white-space: nowrap;
+    padding: 0 16px;
+  }
 }
 
 .jumbotron {
