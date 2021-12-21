@@ -16,7 +16,6 @@ const routes: Array<RouteRecordRaw> = [
     path: '/projects',
     name: 'Projects',
     component: ProjectIndex,
-    redirect: '/projects/',
     children: [
       {
         path: '',
@@ -29,6 +28,10 @@ const routes: Array<RouteRecordRaw> = [
         component: DiningSelector,
       },
     ],
+  },
+  {
+    path: '/projects',
+    redirect: { name: 'ProjectList' },
   },
   {
     path: '/resume',

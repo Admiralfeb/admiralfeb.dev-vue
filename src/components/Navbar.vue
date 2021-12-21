@@ -9,7 +9,7 @@
     <router-link class="nav-link" mat-button :to="{ name: 'Resume' }"
       ><span class="mat-button-wrapper">Resume</span></router-link
     >
-    <router-link class="nav-link" mat-button :to="{ name: 'Projects' }"
+    <router-link class="nav-link" mat-button :to="{ name: 'ProjectList' }"
       ><span class="mat-button-wrapper">Projects</span></router-link
     >
   </nav>
