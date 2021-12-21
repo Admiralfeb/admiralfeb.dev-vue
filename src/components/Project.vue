@@ -2,7 +2,8 @@
   <div class="project-header">
     <h3 class="title">{{ project.name }}</h3>
     <div class="fill" />
-    <a mat-button :href="project.url">Project URL</a>
+    <a mat-button :href="project.url" v-if="!localProject">Project URL</a>
+    <router-link mat-button :to="project.url" v-else>Project URL</router-link>
     <a mat-button :href="project.gitUrl">Git URL</a>
   </div>
   <p>{{ project.description }}</p>
@@ -14,14 +15,18 @@
 </template>
 
 <script lang="ts">
-import { IProject } from "@/models/project";
-import { defineComponent } from "vue";
+import { IProject } from '@/models/project';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   props: {
     project: {
       type: Object as () => IProject,
       required: true,
+    },
+    localProject: {
+      type: Boolean,
+      default: false,
     },
   },
 });

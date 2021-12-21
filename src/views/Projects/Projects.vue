@@ -8,6 +8,17 @@
           :project="project"
           :key="project._id"
         />
+        <Project
+          :project="{
+            name: 'Dining Selector',
+            url: '/projects/dining-selector',
+            gitUrl: 'https://github.com/admiralfeb/dining-selector',
+            description:
+              'Using the npm library I coded \'@admiralfeb/dining-selector\', Vue is able to provide a dining selection.',
+            technologies: ['Typescript'],
+          }"
+          :localProject="true"
+        />
       </div>
       <div class="no-projects" v-else-if="projects?.length === 0">
         There sees to be no projects available to view.
@@ -18,10 +29,10 @@
 </template>
 
 <script>
-import Loader from "@/components/Loader.vue";
-import Project from "@/components/Project.vue";
-import { computed, defineComponent } from "vue";
-import { useStore } from "vuex";
+import Loader from '@/components/Loader.vue';
+import Project from '@/components/Project.vue';
+import { computed, defineComponent } from 'vue';
+import { useStore } from 'vuex';
 
 export default defineComponent({
   components: {
@@ -30,7 +41,7 @@ export default defineComponent({
   },
   setup() {
     const store = useStore();
-    store.dispatch("getProjects");
+    store.dispatch('getProjects');
 
     return {
       projects: computed(() => store.state.projects),
