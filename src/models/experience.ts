@@ -1,4 +1,4 @@
-import { IDbItem } from "./dbItem";
+import { IDbItem } from './dbItem';
 
 export interface IExperience extends IDbItem {
   title: string;

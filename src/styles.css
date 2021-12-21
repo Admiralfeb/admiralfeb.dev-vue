@@ -13,7 +13,7 @@ body {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   font-family: Roboto, Helvetica, sans-serif;
   color: white;
-  background-image: url("./assets/img/Keeper.jpg");
+  background-image: url('./assets/img/Keeper.jpg');
   background-size: 700px;
   background-repeat: no-repeat;
   background-position: left center;
@@ -29,7 +29,14 @@ a:hover {
   color: white;
 }
 
+button {
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 [mat-button] {
+  background-color: var(--primary);
   box-sizing: border-box;
   position: relative;
   user-select: none;
@@ -50,6 +57,7 @@ a:hover {
   font-weight: 500;
 }
 [mat-icon-button] {
+  background-color: transparent;
   padding: 0;
   min-width: 0;
   width: 40px;

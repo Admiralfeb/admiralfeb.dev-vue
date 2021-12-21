@@ -1,8 +1,8 @@
-import { Store } from "vuex";
-import { IProject } from "./models/project";
-import { IResume } from "./models/resume";
+import { Store } from 'vuex';
+import { IProject } from './models/project';
+import { IResume } from './models/resume';
 
-declare module "@vue/runtime-core" {
+declare module '@vue/runtime-core' {
   interface State {
     resume: IResume | undefined;
     projects: IProject[] | undefined;

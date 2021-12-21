@@ -33,8 +33,8 @@
 
 <script lang="ts">
 // import Versions from "@/components/Versions.vue";
-import { WEBSITE_URLS } from "@/constants";
-import { defineComponent } from "vue";
+import { WEBSITE_URLS } from '@/constants';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   // components: {
@@ -62,9 +62,13 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
   img {
     margin: 0 10px 0 0;
+  }
+  .jumbotron {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 </style>

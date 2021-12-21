@@ -1,5 +1,5 @@
 const isString = (value: any): value is string => {
-  return typeof value === "string";
+  return typeof value === 'string';
 };
 
 type ISorter<T> = {
@@ -33,7 +33,7 @@ export const genericSort = <T>(a: T, b: T, sorter: ISorter<T>) => {
     return 0;
   };
 
-  return sorter.order === "desc" ? result() * -1 : result();
+  return sorter.order === 'desc' ? result() * -1 : result();
 };
 
-export type Order = "asc" | "desc";
+export type Order = 'asc' | 'desc';

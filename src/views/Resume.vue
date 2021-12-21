@@ -11,10 +11,10 @@
 </template>
 
 <script lang="ts">
-import Loader from "@/components/Loader.vue";
-import ResumeData from "@/components/ResumeData.vue";
-import { computed, defineComponent } from "vue";
-import { useStore } from "vuex";
+import Loader from '@/components/Loader.vue';
+import ResumeData from '@/components/ResumeData.vue';
+import { computed, defineComponent } from 'vue';
+import { useStore } from 'vuex';
 
 export default defineComponent({
   components: {
@@ -23,7 +23,7 @@ export default defineComponent({
   },
   setup() {
     const store = useStore();
-    store.dispatch("getResume");
+    store.dispatch('getResume');
 
     return {
       resume: computed(() => store.state.resume),
