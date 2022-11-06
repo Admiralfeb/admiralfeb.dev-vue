@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="text-center">Zachary's Resume</h2>
+    <h2 class="text-center">Austin's Resume</h2>
     <div class="jumbotron">
       <div class="resume" v-if="resume">
         <ResumeData :experience="resume.experience" :skills="resume.skills" />

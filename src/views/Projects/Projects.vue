@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="text-center">Zachary's Projects</h2>
+    <h2 class="text-center">Austin's Projects</h2>
     <div class="jumbotron">
       <div class="projects" v-if="projects?.length > 0">
         <Project
