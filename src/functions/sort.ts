@@ -1,6 +1,6 @@
 const isString = (value: any): value is string => {
   return typeof value === 'string';
-}; 
+};
 
 type ISorter<T> = {
   orderBy: keyof T;
